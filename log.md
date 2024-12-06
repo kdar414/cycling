@@ -8,5 +8,8 @@
   - Concerns about Leuvenmapmatching related to difficulty of precise mapmatching.
   - **Overall leaning towards OSRM** but waiting for an issue associated with unnamed roads to be addressed.
   - Information accessed from **cycling-pollution-sophie/code/_old/code_notes.txt** and **code/_old/mapmatching_testing.py**
+ 
+- I think the .lua file is related to docker but not entirely sure what is in it.
+- I am going to set up the ORSM image in docker - to see if I can get it running.
 
 
