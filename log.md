@@ -19,3 +19,4 @@
 - I am trying to follow the video but route between two points in Auckland but I cannot get the code to use the map that I have downloaded.
     -  I have moved the new-zeland-latest.osm.pbf into the openrouteservice folder and have adjusted it in the config and docker file.
     -  This is the current issue I am dealing with ![Alt text](relative%20path/to/img.jpg?raw=true "What I am stuck on at the moment")
+![alt text](https://github.com/kdar414/cycling/blob/[branch]/image.jpg?raw=true)
