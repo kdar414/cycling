@@ -18,6 +18,5 @@
 - I have been trying to set up OSRM following this video ([https://www.youtube.com/watch?v=VQXlbqKArFk](url)) - I can get the example to work for the video (which shows you how to use the directing function rather than snapping function)
 - I am trying to follow the video but route between two points in Auckland but I cannot get the code to use the map that I have downloaded.
     -  I have moved the new-zeland-latest.osm.pbf into the openrouteservice folder and have adjusted it in the config and docker file.
-    -  This is the current issue I am dealing with ![Alt text](relative%20path/to/img.jpg?raw=true "What I am stuck on at the moment")
-
-![alt text](https://github.com/kdar414/cycling/blob/images/issue_9_DEC.png)
+    -  This is the current issue I am dealing with ![What I am stuck on at the moment](https://github.com/kdar414/cycling/blob/images/issue_9_DEC.png)
+          - The specific line that I am unsure about is **Update the file /home/ors/files/example-heidelberg.test.pbf with /heidelberg.test.pbf** 
