@@ -20,3 +20,9 @@
     -  I have moved the new-zeland-latest.osm.pbf into the openrouteservice folder and have adjusted it in the config and docker file.
     -  This is the current issue I am dealing with ![What I am stuck on at the moment](https://github.com/kdar414/cycling/blob/images/issue_9_DEC.png)
           - The specific line that I am unsure about is **Update the file /home/ors/files/example-heidelberg.test.pbf with /heidelberg.test.pbf** 
+
+- I decided to double check what happens when I put this into the browser http://localhost:8080/ors/v2/directions/driving-car?&start=174.862094,-36.849295&end=174.768500,-36.853737
+    - This is what I was testing earlier to give directions from 17 Clarendon Road to the Science Building and ... **IT WORKS!**![Screen Shot 2024-12-09 at 13 10 36](https://github.com/user-attachments/assets/50abdbbc-c778-4093-b541-cc908a2c1a25)
+
+- Next thing to do now is try and use the snap feature which attaches GPS points to roads (not sure if it does paths but we will find out!
+      
