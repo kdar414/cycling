@@ -10,5 +10,5 @@
   
 | Index  | Original_coords |  Mapmatched_coords  | Distance_euclidean |
 | ------------- | ------------- |------------- | ------------- |
-    
+|  |  | |  |    
 
