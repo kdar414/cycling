@@ -12,3 +12,20 @@
 | ------------- | ------------- |------------- | ------------- |
 |  |  | |  |    
 
+**Segmentation**
+- First look at segmenting the network after talking to Sila on Tuesday.
+- This uses osmnx in python
+- Sophie has segmenting functions in graph_manipulation.py.
+- I have run the first part of this to create the graphml file.
+          - I think this files contains nodes and edges for the area of interest using bbox to create a graph from the osm map
+          - I have run two
+                  - 1) Small bbox near uni
+                  - 2) Larger bbox covering most of Auckland
+- The osmnx package has recently been updated to version 2.0.0 (Nov 2024) - this affects the ox.graph_from_bbox function. I have downgraded to version 1.9.4 which runs the code Sophie wrote and provides depreciation warnings should it be better to update the code.
+- Next step is to run through the next functions on segmentation until the first two of three types have been achieved.
+- *Should I make the graph for Auckland all at once or should I do it as I process different gps trajectories?*
+
+**Notes from the day**
+- Road network = system of road segments and intersections. These are 'natural graphs' because the intersections are nodes and road segments are edges.
+- Road segements have properties such as speed limit, road class, length, curvature
+- Road network combines all of the segments, intersection and attributes. Some attributes are missing such as lane number, bear in mind that some things may be missing. 
