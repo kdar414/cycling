@@ -6,7 +6,7 @@ import time
 
 # %%
 '''
-
+#sudo docker run -t -i -p 5000:5000 -v "/Users/kad/osrm-docker:/data" osrm/osrm-backend osrm-routed --algorithm mld /data/new-zealand-latest.osrm --max-matching-size 20000
 '''
 
 # %%
