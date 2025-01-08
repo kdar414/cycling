@@ -7,8 +7,9 @@
           - **I would like to map these results to see if there are differences associated with code**.
 - I want to create a dataframe from the output to compare the original gps coordinates with the map matched ones and then calculate the distance between them to see if this is affecting the mapmatching location (e.g. at Tamaki drvie between the road and cycle lane match)
           - currently struggling to extract the output from the query into a df because there are multiple dictionaries within the output
-          |**Index**|**Original_coords**|**Mapmatched_coords**|**Distance_euclidean**|
-          |---------|-------------------|---------------------|----------------------|
-          |         |                   |                     |                      |
+  
+                          |Index|Original_coords|Mapmatched_coords|Distance_euclidean|
+                          |---------|-------------------|---------------------|----------------------|
+                          |         |                   |                     |                      |
 
 
