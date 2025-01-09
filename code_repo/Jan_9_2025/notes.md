@@ -12,8 +12,9 @@
               - The first 1000 coordinates for each dictionary (filter_xy_tuple, match_xy_tuple etc) 
               - I manually copied the match_xy_tuple from the csv file via bash
   
-                       *cat /Users/kad/Desktop/cyclists/Kimberley/mapmatching/osrm_caller/matched_tracks080125.csv*
-  
+                       cat /Users/kad/Desktop/cyclists/Kimberley/mapmatching/osrm_caller/matched_tracks080125.csv
+
+
       - This allows all the data to be accessed and gets around the issue of only 1000 records being shown and everything else hidden behind ellipses (I checked that the length of the original matched the length of matched tuples"
   
               - I saved the match tuples as **match_xy_tuple.txt**
