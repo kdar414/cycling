@@ -13,9 +13,8 @@
 
 #### Edge grouping
 - Two methods:
-		- Independent-edge segmentation (IES): segements are created along each edge independently. There are no forms of grouping and relationships between edges are not maintained.
-
-		- Grouped-edge segmentation (GES): edges are grouped by certain attributes and can span across mutiple edges. The networks are saves as linestring geometry.
+- Independent-edge segmentation (IES): segements are created along each edge independently. There are no forms of grouping and relationships between edges are not maintained.
+  		- Grouped-edge segmentation (GES): edges are grouped by certain attributes and can span across mutiple edges. The networks are saves as linestring geometry.
 
 - In segementation 
 		- 1) Set of roads are converted to a graph. 
@@ -46,7 +45,7 @@
 
 				- the sequence of the final traversal is used as the order of segmentation.
 
-<p align = 'center'><img width = 300 src = "https://github.com/user-attachments/assets/1f58d8a5-cc71-4b9a-b9a6-79a01138a9ee")</p>
+<p align = 'center'><img width = 500 src = "https://github.com/user-attachments/assets/1f58d8a5-cc71-4b9a-b9a6-79a01138a9ee")</p>
 
 
 **Interpolation**
