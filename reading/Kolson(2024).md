@@ -1,5 +1,5 @@
-Methods
-## **Segmentation**
+## Methods
+### **Segmentation**
 #### Creating segments
 - Road network made up to a graph of edges and nodes. It may be made of multiple edges with different lengths depending on the layout.
 - Algorithm checks the length of the edges on each road and adds nodes so that segments are all the wanted **length (l)**
@@ -7,7 +7,7 @@ Methods
 - When defining a new node so that the segments have the same length the following equations are used:
 		- where *p is a new point between u and v*, *x,y are node position* and *d is the distance between the nodes*. The new edge *x<sub>u</sub>,y<sub>u</sub> to x<sub>p</sub>,y<sub>p</sub>* is a spatial segment
 
-<p align = "centre">(src = https://github.com/user-attachments/assets/aeaa42f7-832a-4af1-a45d-7eda4270f371)</p>
+<p align = "center"><img width = "300" src = "https://github.com/user-attachments/assets/aeaa42f7-832a-4af1-a45d-7eda4270f371" alt = "Equation1")</p>
 
 - When this is applied to the whole network the edges will be as close to l as possible.
 
@@ -46,6 +46,7 @@ Methods
 
 				- the sequence of the final traversal is used as the order of segmentation.
 
+<p align = 'center'><img width = 300 src = "https://github.com/user-attachments/assets/1f58d8a5-cc71-4b9a-b9a6-79a01138a9ee")</p>
 
 
 **Interpolation**
