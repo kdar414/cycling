@@ -76,3 +76,45 @@
 				- In kriging the sampled points are fitted to a curve to describe their natural variance
 						- weights of estimations are based on the spatial arrangement (curve) of observations, rather than a model of nonvariant spatial autocorrelation as assumed with IDW.
 
+#### Dosage model
+- Exposure = concentation of a given polluatnt in the enviornment of a subject.
+- Dosage = the amount of pollutant they are inhaling when taking into account their minute ventilation and the exposure duration (Dirks *et al.*, 2012)
+- Dosage is more relevant for assessing physiological consequences of a polluted environment.
+- For this study dosage is calculated as: (derived from Dirks et al (2012); Wang et al (2018))
+
+d = l/v * c
+
+- Uses time exposed and measured concentration *(c)* to calculated dosage *(d)*.
+	- Where time exposed could be:
+			- distance long a road segment *(l)*
+			- travel speed or a time measurement *(v)*
+
+- Dosage calculated as the number of particles inhaled are UFP counts
+
+
+## Results
+- Segmentation and interpolation methods affect the spatial distribution of the calculated dosage on different trajectories
+- Temporal interval of pollutant data had a low impact on dosage calculations
+- Spatial segment length had a larger impact - average dosage increased significantly with segment length
+
+- Interpolating with kriging data to segments with Krigin consistently resulted in higher dosage and concentration values compared to voronoi and IDW
+
+- Average particle concentrations varied with temporal interval, with t= 60s resulting in a much lower concentration compared to other intervals across all interpolation methods. 
+
+
+## Discussion (just picked out some of the details)
+- Temporal interval of pollutant data has a smaller impact on dosage and total concentration than choice of spatial segement length (non-linear)
+
+- Interpolation method used for estimations significantly influences concentration and dosage metrics: all leading to different results
+	- expected due to different underlying assumptions
+	- Kriging: more consistent trends as a result of changing temporal and spatial segment lengths
+			- likely to account for uncertainties in measurements
+
+	- Voronoi: displays the least consistent trends likely to be more strongly influenced by outliers
+	- IDW and kriging performed similarly, voronoi lower likely because it cannout account for spatial variance
+
+- Dosage calculation here is highly dependent on spatial segement length and the temporal interval
+	- model uses *l* as a numberator so the calculation cannot be accurately compared between different values of *l*.
+
+- Erroneous map-matching: impacting on segmented network length. 
+		- If a point is assigned to the wrong road segments are produced to this point which can increase the route length
