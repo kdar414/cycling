@@ -1,6 +1,6 @@
 **Mapmatching**
 
-- map matching is running on orsm caller with r= 100 - started at 08:12 am and finished at ______
+- map matching is running on orsm caller with r= 100 - started at 08:12 am and finished at ______ (I stopped it after 9 hours)
 
 - I have been trying to visualise and compare the mapmatched and the raw gps coordinates
   
