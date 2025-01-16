@@ -70,7 +70,34 @@
      d) except has changes to: except Exception as e: Print (f'Error processing edge ({u},{v}):({e})
      The output shows Error processing edge (25769626, 4330750496): not enough values to unpack (expected 8, got 5)
 
-  4) Adjusted (chatgpt) to
+  3) Adjusted (chatgpt) to
+
      a) Handle segments with 8 and 5 attributes
-            8 = start 
+
+            8 = start_xy, end_xy, seg_id, seg_uid, seg_grp, seg_order, edge_grp, length
+
+            5 = start_xy, end_xy, seg_id, seg_uid, seg_grp.
+
+     - Missing attributes seg_order, edge_grp and length are assigned NaN. This runs but I think the missing attributes and causing errors later on.
+
+- The output of version 3 is a gdf called segment_gdf with these columns
+
+      - 1) way_name
+      - 2) way_highway
+      - 3) way_surface
+      - 4) way_maxspeed
+      - 5) way_number
+      - 6) edgegroup_id
+      - 7) edge_osmid
+      - 8) edge_order
+      - 9) geometry
+      - 10) seg_uid
+      - 11) seg_id
+      - 12) seg_group
+      - 13) seg_order
+      - 14) seg_length
+      - 15) seg_roundingerror
+      - 16) colour
+
+- There are missing values for some of the attributes.
      
