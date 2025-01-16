@@ -59,14 +59,18 @@
 - There are three variations of this function
 - 1) Original from Sophie which produces the output: "segments not found in edge: 25769626, 4330750496. This error occurs when Ordered_seg_graph and osm_graph are used.
   2) Adjusted to:
+     
      a) error handle: to say Error processing edge({u},{v}:{e})
+
      b) Attribute retrieval
            - container['way_surface'].append(data['surface'] if  'surface' in data else notfound_val to container['way_surface'].append(data.get('surface', notfound_val)
+
      c) Colour assignment activated
+
      d) except has changes to: except Exception as e: Print (f'Error processing edge ({u},{v}):({e})
      The output shows Error processing edge (25769626, 4330750496): not enough values to unpack (expected 8, got 5)
 
-  3) Adjusted (chatgpt) to
+  4) Adjusted (chatgpt) to
      a) Handle segments with 8 and 5 attributes
             8 = start 
      
