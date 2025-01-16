@@ -23,5 +23,6 @@
 ##### 5) **def GetEdgeDirections**
 - input graph: I used osm_graph (this is the only graph file so far)
 - produces edge-directions:
+
       - multigraph with 3050 nodes and 4485 edges
       - networkx.classes.multigraph.MultiGraph
