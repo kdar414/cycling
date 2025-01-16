@@ -26,3 +26,9 @@
 
       - multigraph with 3050 nodes and 4485 edges
       - networkx.classes.multigraph.MultiGraph
+  
+- sample edge attributes produces a list of: (e.g. for index 437)
+
+      - (25773727, 540465689, {'osmid' : 763203, 'name' : 'Alberton Place', 'highway' : 'residential', 'maxspeed' : '50', 'oneway' : False, 'reversed' : False, 'length' : 2617, 'from' : 540465689, 'to' : 25773727, 'geometry' : <LINESTRING geometry ..... >, 'north_node' : 'u', 'bearing' : 176, 'direction' : 'A', 'way_id' : 76372033}).
+
+  
