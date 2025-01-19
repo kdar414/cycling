@@ -12,5 +12,5 @@
     3) Treid plotting again after checking the crs of gdf_edges and unmatched_segments_gdf were same. Both '4326' but all still visualised as unmatched segments.
     4) Checked if the coordinates of matched points exist in any edge and they did not. "Segment not found for (lat, long).
     5) Checked the start and end for each edge -> all successfully identified.
-    6) Tried to add a bugger of 1e-4 (adjusting the match radius) and plotted it and then **segments were found** for all. Seems that the buffer is necessary but I do not understand why the buffer is needed when the points have been mapmatched.
+    6) *Tried to add a buffer* of 1e-4 (adjusting the match radius) and plotted it and then **segments were found** for all. Seems that the buffer is necessary but I do not understand why the buffer is needed when the points have been mapmatched.
   
