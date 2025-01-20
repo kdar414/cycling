@@ -11,9 +11,8 @@
     1) *Make gdf for edges*. Get the coordinates from 'track_id' in map_matched_tracks. Create gdf for non_matched points. Assigned crs 4326. I visualised this and shows edges with unpatched segments overlaying them.
 
 ![Screen Shot 2025-01-17 at 08 35 22](https://github.com/user-attachments/assets/782aa159-fe09-47c6-9b8b-010b6d49d062)
-
     2) Then I tried to find distance between edges and points but there was no output. I checked the validity of unmatched_segments_gdf -> all true.
-    3) Treid plotting again after checking the crs of gdf_edges and unmatched_segments_gdf were same. Both '4326' but all still visualised as unmatched segments.
+    3) Tried plotting again after checking the crs of gdf_edges and unmatched_segments_gdf were same. Both '4326' but all still visualised as unmatched segments.
     4) Checked if the coordinates of matched points exist in any edge and they did not. "Segment not found for (lat, long).
     5) Checked the start and end for each edge -> all successfully identified.
     6) *Tried to add a buffer* of 1e-4 (adjusting the match radius) and plotted it and then **segments were found** for all. Seems that the buffer is necessary but I do not understand why the buffer is needed when the points have been mapmatched.
