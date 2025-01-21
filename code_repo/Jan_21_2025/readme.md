@@ -3,3 +3,5 @@
 - (green is raw, pink is mapmatched and the lines are a clipped section of the road network)
 - I have adjsuted this in the mapmatching code to have 50 or 100 decimal places and currently storing this as a csv.
 - **New problem** the conversion of the match_xy_tuple to points in python is truncating the decimal places so the same issue in the segmentation will occur. Additionally when visualising this in QGIS it also limits the number of decimal places.
+  
+      - Went to hacky hour -> they will follow up with the issue. They think it is something to do with Point which is from Shapely.
