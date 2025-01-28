@@ -21,4 +21,5 @@ def SegGDFFromGraph(graph:nx.MultiDiGraph):
 
 Segment_gdf = SegGDFFromGraph(graph = Ordered_seg_graph)
 ```
-- This produces gdf of 446769 rows x 4 columns (see below).![Uploading Screen Shot 2025-01-29 at 08.29.49.png…]()
+- This produces gdf of 446769 rows x 4 columns (see below).
+![Screen Shot 2025-01-29 at 08 29 49](https://github.com/user-attachments/assets/3939315f-540d-4880-805f-1841d9dc2adc)
