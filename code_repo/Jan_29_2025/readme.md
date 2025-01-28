@@ -1,5 +1,7 @@
 **Segmentation**
 
+<ins>WORKING IN JUPYTER NOTEBOOK IN segmentation-Copy3</ins>
+
 *ORDERED_SEG_GRAPH*
 - This is a plot of the ordered_seg_graph: just to visualise the information in it
 ```
