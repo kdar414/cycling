@@ -10,9 +10,8 @@ segment = [start_geom, end_geom, cur_seg_id, cur_seg_uid, cur_seg_len] perhaps t
 -anyway, adjusting: for start_xy, end_xy, seg_id, seg_uid, seg_grp, seg_order, edge_grp, length in data['segments']: to: for start_xy, end_xy, seg_id, seg_uid, length in data['segments']:
 - you'll then need to comment out the lines that reference those deleted variables (edited)
 - Also consider using tqdm , particularly for those longer running cells notfound_val:any='not available' - it's more memory efficient to use pd.NA or None instead of the string "not available"
-- # Segment GeoDataFrame From Graph
-# THIS ONLY WORKS ON THE SEGMENTED GRAPH, NOT THE GRAPH PRODUCED FROM SEGMENTS
-# creates geodataframe of segments from a (spatially segmented) networkx graph
+-  Segment GeoDataFrame From Graph
+ THIS ONLY WORKS ON THE SEGMENTED GRAPH, NOT THE GRAPH PRODUCED FROM SEGMENTS creates geodataframe of segments from a (spatially segmented) networkx graph
 from tqdm.auto import tqdm
 
 def SegGDFFromGraph(graph:nx.MultiDiGraph):
