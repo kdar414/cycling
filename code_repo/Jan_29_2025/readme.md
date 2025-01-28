@@ -40,6 +40,8 @@ for node, data in Ordered_seg_graph.nodes(data=True):
 # Display the map
 m
 ```
+![Screen Shot 2025-01-29 at 09 19 31](https://github.com/user-attachments/assets/f8a2c47c-c8fa-4147-9156-4088a8f8d1e0)
+
 
 - Testing out the code from hacky hour
 ```
