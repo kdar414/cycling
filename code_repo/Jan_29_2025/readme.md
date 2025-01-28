@@ -352,3 +352,4 @@ distance_args_defined = { #following the structure from config.yml
 cumulative_segmentation_graph = CumulativeSegmentation(graph_from_segments, 'name', 5, distance_args_defined)
 
 ```
+- The output of this which says the data for each edge is stored in a file called segmentation_log.txt. This has been included in the folder of this file. 
