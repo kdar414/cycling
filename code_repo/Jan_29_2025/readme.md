@@ -354,3 +354,4 @@ cumulative_segmentation_graph = CumulativeSegmentation(graph_from_segments, 'nam
 ```
 - The output of this which says the data for each edge is stored in a file called segmentation_log.txt. This has been included in the folder of this file. 
 - There is a **problem: cumulative_segmentation_graph is being returned as a dictionary not as a graph**
+- I am trying to convert it to a graph: this is taking a long time and I am having issues with my computer freezing/the notebook tab crashing.
