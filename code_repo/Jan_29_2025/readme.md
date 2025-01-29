@@ -365,16 +365,18 @@ GRAPH_cumulative_segmentation = nx.DiGraph()
 
 # Loop through each road and add edges with attributes
 for road, edges in cumulative_segmentation_graph.items():
-    for start, end, road_name in edges:
-        GRAPH_cumulative_segmentation.add_edge(start, end, road_name=road_name)
+    for start, end, name in edges:
+        GRAPH_cumulative_segmentation.add_edge(start, end, name=road)
+
 ```
 ```
 print("Sample nodes:", list(GRAPH_cumulative_segmentation.nodes)[:10])  
 print("Sample edges:", list(GRAPH_cumulative_segmentation.edges(data=True))[:10])
 ```
-![Screen Shot 2025-01-29 at 14 49 44](https://github.com/user-attachments/assets/265e36e7-ba78-4066-9cdb-24a2795885df)
+![Screen Shot 2025-01-29 at 14 54 36](https://github.com/user-attachments/assets/81106209-e699-4a3e-8d11-36290a44e2a1)
 
-**Ok there is a weird issue with road name being 0 for each because I have seen names in other data but under the label 'name' not 'road_name'**
+
+**Ok there is a weird issue with road name being 0 for each because I have seen names in other data but under the label 'name' not 'road_name'** Fixed this by changing the code for GRAPH_cumulative_segmentation where name = road.
 ```
 import matplotlib.pyplot as plt
 
