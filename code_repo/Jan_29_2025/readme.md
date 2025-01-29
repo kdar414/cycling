@@ -355,3 +355,30 @@ cumulative_segmentation_graph = CumulativeSegmentation(graph_from_segments, 'nam
 - The output of this which says the data for each edge is stored in a file called segmentation_log.txt. This has been included in the folder of this file. 
 - There is a **problem: cumulative_segmentation_graph is being returned as a dictionary not as a graph**
 - I am trying to convert it to a graph: this is taking a long time and I am having issues with my computer freezing/the notebook tab crashing. Have created a new version because the old file was corrupt, it is located here: "/Users/kad/Desktop/cyclists/Kimberley/segmentation/jupyter/segmentation_3.ipynb"
+- Ok some progress I think!
+```
+import networkx as nx
+import logging
+
+# Initialize a directed graph
+GRAPH_cumulative_segmentation = nx.DiGraph()
+
+# Loop through each road and add edges with attributes
+for road, edges in cumulative_segmentation_graph.items():
+    for start, end, road_name in edges:
+        GRAPH_cumulative_segmentation.add_edge(start, end, road_name=road_name)
+```
+```
+print("Sample nodes:", list(GRAPH_cumulative_segmentation.nodes)[:10])  
+print("Sample edges:", list(GRAPH_cumulative_segmentation.edges(data=True))[:10])
+```
+![Screen Shot 2025-01-29 at 14 49 44](https://github.com/user-attachments/assets/265e36e7-ba78-4066-9cdb-24a2795885df)
+
+```
+import matplotlib.pyplot as plt
+
+subgraph = GRAPH_cumulative_segmentation.subgraph(list(GRAPH_cumulative_segmentation.nodes)[:50])  # Subgraph with 50 nodes
+nx.draw(subgraph, with_labels=True, node_size=50, font_size=8)
+plt.show()
+```
+![download](https://github.com/user-attachments/assets/4092945e-b55e-4d98-806e-2937b70f8a2d)
