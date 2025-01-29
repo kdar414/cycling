@@ -75,3 +75,29 @@ def GetSegsAlongTracks(tracks:dict, graph:nx.Graph, max_pathlength:int=10, remov
 
 segments_along_track = GetSegsAlongTracks(cycle_tracks, SEG_GDF_GRAPH)
 ```
+- One of the issues is that the osmid is not carried from the SEG_GDF_GRAPH, so trying to ensure that the osmid is maintained in SEG_GDF_GRAPH to see if that will fixt the issue. Attempting to address this using this code: but it is taking a long time to run.
+
+```
+import networkx as nx
+
+def SegGDFToGraph(segments_gdf: gpd.GeoDataFrame):
+    # Create the graph from the GeoDataFrame using mp.gdf_to_nx
+    seg_graph = mp.gdf_to_nx(segments_gdf)
+
+    # Set CRS for the graph
+    seg_graph.graph['crs'] = 'epsg:4326'
+
+    # Loop over the nodes and assign the osmid from the GeoDataFrame index
+    for i, node in enumerate(seg_graph.nodes(data=True)):
+        osmid = segments_gdf.index[i]  # Extract the osmid from the GeoDataFrame index
+        seg_graph = nx.relabel_nodes(seg_graph, {node[0]: osmid})  # Re-label node with osmid
+
+        # Assign coordinates based on the original node tuple
+        seg_graph.nodes[osmid]['x'] = node[0][0]
+        seg_graph.nodes[osmid]['y'] = node[0][1]
+
+    return seg_graph.to_undirected()
+
+SEG_GDF_GRAPH = SegGDFToGraph(Segment_gdf)
+
+```
