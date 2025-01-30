@@ -101,3 +101,4 @@ def SegGDFToGraph(segments_gdf: gpd.GeoDataFrame):
 SEG_GDF_GRAPH = SegGDFToGraph(Segment_gdf)
 
 ```
+- Still having issues with this.
