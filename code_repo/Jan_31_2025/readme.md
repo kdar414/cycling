@@ -113,4 +113,7 @@ Path could not be found between nodes 1748 and 44
 ![download (3)](https://github.com/user-attachments/assets/d0b33e42-1a02-425e-8081-72b0a5e4d697)
 ![download (4)](https://github.com/user-attachments/assets/a258c2de-ad36-40d4-82a6-fe23efcdae5f)
 
-
+**NEXT WEEK**
+- Finish the last two functions on the graph_manipulation.py file
+- Run through the code with the full nextwork for Auckland.
+- Mapmatching of the cycle routes
