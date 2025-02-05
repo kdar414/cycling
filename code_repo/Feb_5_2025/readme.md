@@ -109,6 +109,9 @@ def GetRideSegsGDF(matched_gdf, matched_filename, network_graph, seg_multi_gdf,
     return track_segs_mp.reset_index(drop=True)
 
 ride_segments = GetRideSegsGDF(ngapipi_gdf,'match_xy_tuple',SEG_GDF_GRAPH,Segment_gdf)
+
+Ok next steps: address the issue with format of the dictionary when converted from csv (Maike data) and start the interpolation code (either on ngapipi or full code). Also when should I join the pollution data back to the coordinates? (before the first interpolation, using original geometry?)
+
 ```
 - This produces a gdf which is very similar to segment_gdf but it is called ride_segments
 - The output (for the ngapipi data) is
