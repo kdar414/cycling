@@ -22,9 +22,9 @@
  
 
 
-![Voronoi_output](https://github.com/user-attachments/assets/feada67c-496c-4032-b777-eee2e52bd92d) ![IDW output](https://github.com/user-attachments/assets/7a937d71-cb92-413c-9f8e-b4bfb985afbf) ![Kriging output](https://github.com/user-attachments/assets/a9d6abae-691d-4112-9a6e-bcaca78dfd50)
+![Voronoi_output](https://github.com/user-attachments/assets/feada67c-496c-4032-b777-eee2e52bd92d) ![IDW output](https://github.com/user-attachments/assets/7a937d71-cb92-413c-9f8e-b4bfb985afbf) ![Kriging output](https://github.com/user-attachments/assets/a9d6abae-691d-4112-9a6e-bcaca78dfd50) ![All interpolation output](https://github.com/user-attachments/assets/dd8ecc8c-6ee9-4700-8917-106c267e0308)
 
-![All interpolation output](https://github.com/user-attachments/assets/dd8ecc8c-6ee9-4700-8917-106c267e0308)
+
 
   
 
