@@ -95,3 +95,4 @@ Line_string_centroids = GetLineStringCentroids(Line_centroids)
 **Segmentation**
 - I am also trying to the run the **def GetGraph** function using 'topologic' to see if it will complete. Likely the better output to use for the interpolation.
 - Once done the code to create the new geometry column as discussed will run and I can test the centroids again to see if they have worked better or not. 
+- I am a little confused about how the segmentation is related to the interpolation, like that is the gdf to use for the interpolation or for the centroids.
