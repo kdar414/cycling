@@ -18,7 +18,6 @@ plt.show()
 
 | Edges       |  Nodes |
 :-------------------------:|:-------------------------:
-![image](https://github.com/user-attachments/assets/c2933c8a-5c37-4943-a31a-923fbe275832) |
-![image](https://github.com/user-attachments/assets/41e3bf24-e6fd-46f8-b086-57f909672905)
+![image](https://github.com/user-attachments/assets/c2933c8a-5c37-4943-a31a-923fbe275832)|![image](https://github.com/user-attachments/assets/41e3bf24-e6fd-46f8-b086-57f909672905)
 
 ![image](https://github.com/user-attachments/assets/547d257b-7832-416f-b606-9247eba50b84)
