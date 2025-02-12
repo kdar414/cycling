@@ -16,8 +16,7 @@ def SegGDFFromGraph(graph:nx.MultiDiGraph):
                 "seg_length": length,
                 "osmid": data["osmid"],
                 # Extract segment group from seg_uid (e.g., '2-0' -> group 2)
-                "seg_group": seg_uid.split('-')[0] if '-' in seg_uid else seg_uid  # Handles cases where `seg_uid` doesn't have '-'
-  # The first part before the '-'
+                "seg_group": seg_uid.split('-')[0] if '-' in seg_uid else seg_uid  
             })
     gdf = gpd.GeoDataFrame(rows, crs=4326)
     return gdf
