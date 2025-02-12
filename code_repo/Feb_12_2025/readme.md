@@ -1,4 +1,29 @@
 - It appears that the error in the graph network occurs during the conversion of Ordered_seg_graph to a gdf in the function def SegGDFFromGraph
+```
+# Segment GeoDataFrame From Graph
+# THIS ONLY WORKS ON THE SEGMENTED GRAPH, NOT THE GRAPH PRODUCED FROM SEGMENTS
+# creates geodataframe of segments from a (spatially segmented) networkx graph
+from tqdm.auto import tqdm
+
+def SegGDFFromGraph(graph:nx.MultiDiGraph):
+    rows = []
+    for index, (u, v, data) in enumerate(tqdm(graph.edges(data=True))):
+        for start_xy, end_xy, seg_id, seg_uid, length in data['segments']:
+            rows.append({
+                "geometry": LineString([Point(start_xy), Point(end_xy)]),
+                "seg_id": seg_id,
+                "seg_uid": seg_uid,
+                "seg_length": length,
+                "osmid": data["osmid"],
+                # Extract segment group from seg_uid (e.g., '2-0' -> group 2)
+                "seg_group": seg_uid.split('-')[0] if '-' in seg_uid else seg_uid  # Handles cases where `seg_uid` doesn't have '-'
+  # The first part before the '-'
+            })
+    gdf = gpd.GeoDataFrame(rows, crs=4326)
+    return gdf
+
+Segment_gdf = SegGDFFromGraph(graph = Ordered_seg_graph)
+```
 - The Segment_gdf comes out as:
 ![image](https://github.com/user-attachments/assets/d2c4e693-7466-44bd-acbd-30029b68f6d9)
 - I tried a different way of converting it to a gdf using
