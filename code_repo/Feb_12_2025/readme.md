@@ -117,3 +117,5 @@ graph_from_segments = GraphFromSegments(Ordered_seg_graph, debug = True)
 | Ordered_seg_graph      |  graph_from_segments |
 :-------------------------:|:-------------------------:
 ![image](https://github.com/user-attachments/assets/3afa8ed3-667d-4721-affe-241422765c19)|![image](https://github.com/user-attachments/assets/6404ffb8-d2a7-483f-8690-1cb3406bf31b)
+
+- Could use the nodes_gdf, edges_gdf = momepy.nx_to_gdf(Ordered_seg_graph) - need to get the same attributes as the Segment_gdf code ("geometry", "seg_id", "seg_uid", "seg_length", "osmid"). Then could use this in place of Segment_gdf in the code.
