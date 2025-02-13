@@ -141,3 +141,5 @@ Node 11091165603 is missing coordinates!
 Node 10581003853 is missing coordinates!
 
 ```
+- I have spent a few hours on this and I have not been able to make any more progress. I have posted on the hackyhour slack channel so hopefully that will help to resolve the issue.
+- Whilst I am waiting, I am going to try a section of the network that looks ok, using *Maike/06-12-2023/mgat-Uoa-kroad-Uoa_06-12-23-gps_1.csv*. Need to mapmatch this and then go through segmentation process.
